@@ -1,0 +1,63 @@
+# ── Environment & Secrets ──────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Python ─────────────────────────────────────────────────────────────────
+backend/venv/
+backend/.venv/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/**/*.pyc
+backend/**/*.pyo
+backend/.pytest_cache/
+backend/.mypy_cache/
+backend/.ruff_cache/
+
+# ── Python build artifacts ──────────────────────────────────────────────────
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Database & Data Files (never commit personal diary data) ───────────────
+backend/diary.db
+backend/diary.db-shm
+backend/diary.db-wal
+backend/diary.db.backup
+backend/diary_backup_*.db
+backend/*.db
+backend/*.db-shm
+backend/*.db-wal
+
+# ── ChromaDB (vector index — regenerated automatically) ────────────────────
+backend/chroma_db/
+
+# ── File Uploads (user-uploaded media) ─────────────────────────────────────
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# ── Zip / Archive files ─────────────────────────────────────────────────────
+backend/*.zip
+*.zip
+*.tar.gz
+
+# ── Node.js / Frontend ─────────────────────────────────────────────────────
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/coverage/
+
+# ── Personal Data / Sample Exports (never commit diary content) ─────────────
+frontend/src/diary_backup_*.json
+frontend/src/daybook_*.md
+
+# ── OS & Editor ─────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~

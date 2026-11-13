@@ -1,0 +1,30 @@
+# ── Web Framework ──────────────────────────────────────────────────────────
+fastapi==0.162.0
+uvicorn[standard]==0.54.0
+python-multipart==0.0.33
+starlette==1.10.0
+
+# ── Database ───────────────────────────────────────────────────────────────
+SQLAlchemy==2.1.6
+alembic==1.20.1
+
+# ── Validation & Config ────────────────────────────────────────────────────
+pydantic==2.14.2
+pydantic-settings==2.16.2
+python-dotenv==1.2.4
+
+# ── HTTP Client (for Gemini / OpenAI calls) ────────────────────────────────
+httpx==0.28.1
+
+# ── Semantic Search (Vector Embeddings) ────────────────────────────────────
+# NOTE: torch alone is ~850 MB download. On first startup the sentence
+# transformer model (~90 MB) is downloaded from HuggingFace automatically.
+torch==2.15.0+cpu --extra-index-url https://download.pytorch.org/whl/cpu
+sentence-transformers==6.2.0
+chromadb==1.5.9
+
+# ── Security ───────────────────────────────────────────────────────────────
+bcrypt==5.0.0
+
+# ── Utilities ──────────────────────────────────────────────────────────────
+python-dateutil==4.0.0

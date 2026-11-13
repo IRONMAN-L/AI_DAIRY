@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments and local configuration
+venv/
+.venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Local databases and backups (may contain private journal entries)
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.backup
+
+# ChromaDB / vector indexes (may contain journal text or embeddings)
+chroma_db/
+.chroma/
+
+# User-generated uploads (keep directory placeholder if desired)
+uploads/*
+!uploads/.gitkeep
+
+# Build/package artifacts
+build/
+dist/
+*.egg-info/
+*.zip
+
+# Editor / OS files
+.vscode/
+.idea/
+.DS_Store
